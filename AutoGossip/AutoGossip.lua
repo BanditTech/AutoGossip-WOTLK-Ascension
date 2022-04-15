@@ -8,6 +8,8 @@ GossipFrame:HookScript("OnShow",function()
 		if (strfind(gossipText,"I would like to check my deposit box.")
 		or strfind(gossipText,"I need a ride.")
 		or strfind(gossipText,"Train me!")
+		or strfind(gossipText,"Please teach me.")
+		or strfind(gossipText,"I would like to train.")
 		or strfind(gossipText,"I would like training.")
 		or strfind(gossipText,"I want to browse your goods."))
 		and (noMod) then
