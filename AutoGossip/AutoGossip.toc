@@ -1,5 +1,5 @@
-## Interface: 30000
+## Interface: 30300
 ## Title: Auto Gossip
-## Notes: Auto selects the rogue order hall door options and selects BFA mission table troop recruitment options. Based on "DoorOpener" by Daky@Silvermoon-EU.
-## Author: theoriginalmre
+## Notes: Auto select gossip options when they are redundant. Works for most flight masters, banks, vendors and trainers. Using framework by theoriginalmre who based it on "DoorOpener" by Daky@Silvermoon-EU.
+## Author: BanditTech
 AutoGossip.lua
