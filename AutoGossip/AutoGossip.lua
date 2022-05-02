@@ -1,3 +1,20 @@
+local singleLineStrings = [[
+I would like to check my deposit box.
+Show me my bank
+I need a ride.
+I want to travel fast
+Show me where I can fly.
+Train me!
+Train me.
+Please teach me.
+I would like to train.
+I would like training.
+Let me browse your goods.
+I wish to browse your wares.
+I want to browse your goods.
+]]
+
+
 GossipFrame:HookScript("OnShow",function()
 	local noMod = not IsModifierKeyDown()
 	if (noMod) then
@@ -6,19 +23,7 @@ GossipFrame:HookScript("OnShow",function()
 			local gossipText = GetGossipOptions()
 			-- automate zone gossip like in the original addon
 			-- local zoneText = GetMinimapZoneText()
-			if (strfind(gossipText,"I would like to check my deposit box.")
-			or strfind(gossipText,"Show me my bank")
-			or strfind(gossipText,"I need a ride.")
-			or strfind(gossipText,"I want to travel fast")
-			or strfind(gossipText,"Show me where I can fly.")
-			or strfind(gossipText,"Train me!")
-			or strfind(gossipText,"Train me.")
-			or strfind(gossipText,"Please teach me.")
-			or strfind(gossipText,"I would like to train.")
-			or strfind(gossipText,"I would like training.")
-			or strfind(gossipText,"Let me browse your goods.")
-			or strfind(gossipText,"I wish to browse your wares.")
-			or strfind(gossipText,"I want to browse your goods.")) then
+			if strfind(singleLineStrings, gossipText) then
 				SelectGossipOption(1)
 			end
 		end
