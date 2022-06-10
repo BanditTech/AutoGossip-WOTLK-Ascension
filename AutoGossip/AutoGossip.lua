@@ -12,6 +12,7 @@ I would like training.
 Let me browse your goods.
 I wish to browse your wares.
 I want to browse your goods.
+What do you have for sale?
 ]]
 
 
